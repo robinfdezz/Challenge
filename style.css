@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'Phatone';
+  src: url('Fuentes/Phatone.otf');
+}
+
+@font-face {
+  font-family: 'Bitwise';
+  src: url('Fuentes/bitwise.ttf');
+}
+
+*{
+  background:#ffffff;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.linkedin{
+  filter: grayscale(100%);
+  width: 2%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.linkedin:hover{
+  filter: grayscale(0%);
+  border-radius: 0;
+  transition: 0.4s;
+}
+
+
+
+.encriptadorh1{
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.4em;
+  font-family: 'Bitwise';
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.encriptadorh1:hover{
+  transition: 0.5s;
+  color: #075C9F;
+  opacity: 0.5;
+  cursor: default;
+}
+
+main{
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 120px;
+}
+
+.text-area {
+  border-radius: 24px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Bitwise';
+  width: 680px;
+  height: 450px;
+  border: none;
+  color: rgb(144, 143, 143);
+  margin: 20px 7px 0 7px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+  resize: none;
+}
+::placeholder { color: rgb(225, 225, 225); }
+.text-area:focus {
+    outline: none;
+  }
+
+.mensaje{
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  height: 450px;
+  width: 400px;
+  opacity: 0.5;
+  background-image: url("imagenes/Muñeco2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 24px;
+  color: rgb(182, 182, 182);
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  font-family: 'Bitwise';
+  overflow: auto;
+  resize: none;
+}
+.mensaje:focus {
+  outline: none;
+  color: rgb(159, 159, 159);
+}
+
+.botones{
+  display: flex;
+  padding: 18px 0 18px 10px;
+}
+
+.btn-desencriptar {
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Phatone';
+  font-size: 0.5rem;
+  background: #ffffff;
+  border-radius: 50px;
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+  height: 60px;
+  margin-left: 110px;
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.btn-desencriptar:hover{
+  transition: 0.5s;
+  transform: scale(0.9);
+  color: #53b1f8;
+}
+
+.btn-encriptar {
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Phatone';
+  font-size: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+  height: 60px;
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.btn-encriptar:hover{
+  transition: 0.5s;
+  transform: scale(0.9);
+  color: #53b1f8;
+}
+
+
+.copiar {
+  margin: 0 auto;
+  transition: 0.5s;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Phatone';
+  font-size: 0.5rem;
+  border-radius: 50px;
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+  height: 60px;
+  margin-left: 165px;
+  margin-top: 529px;
+  position: absolute;
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.copiar:hover{
+  transition: 0.5s;
+  transform: scale(0.9);
+  color: #53b1f8;;
+}
+
+.informacion {
+  margin: 0;
+  padding: 0 0 0 8px;
+  transition: 1s;
+  font-family: 'Phatone';
+  color: #495057;
+  font-size:10px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.informacion:hover{
+  transition: 1s;
+  opacity: 0.6;
+}
+
+.informacion img{
+  width: 12px;
+}
+
+
+
+.area-del-texto{
+  display: flex;
+}
+
+/* *Para cuando este en una tablet */ 
+@media screen and (min-width:767px) and (max-width:1023px) {
+  .linkedin{
+    width: 8%;
+  }
+
+.divisiones2, .divisiones1{
+  width: 100%;
+  position: relative;
+}
+  
+main{
+  display: block;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.text-area {
+  border-radius: 24px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Bitwise';
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.mensaje{
+  height: 450px;
+  width: 90%;
+  margin-left: 2%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.copiar {
+  font-size: 0.6rem;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  position: relative;
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.botones{
+  display: flex;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 18px 0 18px 0;
+}
+
+.btn-desencriptar {
+  font-size: 0.4rem;
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+
+.btn-encriptar {
+  font-size: 0.4rem;
+  padding-bottom: 10px;
+}
+
+.informacion {
+  margin: 0 auto;
+  padding: 10px 0 10px 30px;
+  font-size: 0.3rem;
+}
+
+}
+
+/* *Para cuando este en un telefono movil */ 
+@media screen and (max-width:767px) {
+  .linkedin{
+    width: 8%;
+  }
+
+.divisiones2, .divisiones1{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+  
+main{
+  display: block;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.text-area {
+  border-radius: 24px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  font-family: 'Bitwise';
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.mensaje{
+  height: 450px;
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.copiar {
+  font-size: 0.6rem;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  position: relative;
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.botones{
+  display: block;
+  position: relative;
+  width: 70%;
+  margin-left: 10%;
+  padding: 18px 0 18px 0;
+}
+
+.btn-desencriptar {
+  font-size: 0.4rem;
+  margin-left: 0px;
+  padding-bottom: 10px;
+}
+
+.btn-encriptar {
+  font-size: 0.4rem;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.informacion {
+  margin: 0 auto;
+  padding: 10px 0 10px 30px;
+  font-size: 0.3rem;
+}
+
+
+}
